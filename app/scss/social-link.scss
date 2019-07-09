@@ -1,0 +1,23 @@
+.social-link {
+  display: block;
+  position: relative;
+
+  width: 46px;
+  height: 48px;
+
+  color: $sedona-white;
+  background-color: $sedona-blue;
+
+    &:hover,
+    &:focus {
+      background-color: $sedona-blue--hover;
+    }
+}
+
+.social-link__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}

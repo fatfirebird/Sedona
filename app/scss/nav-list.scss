@@ -1,0 +1,16 @@
+.nav-list {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+.nav-list__item {
+  order: 1;
+}
+
+.nav-list__item--logo {
+  order: 2;
+}

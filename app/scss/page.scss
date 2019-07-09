@@ -1,0 +1,11 @@
+.page {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.visually-hidden {
+  @include visually-hidden();
+}

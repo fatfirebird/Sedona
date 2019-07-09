@@ -1,0 +1,92 @@
+.button {
+  display: block;
+
+  border: none;
+
+  cursor: pointer;
+  background-color: $sedona-blue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button--hotel {
+  @include text(21px, 26px, $sedona-white);
+
+  max-height: 60px;
+
+  padding: 15px 30px 15px 30px;
+
+  &:hover,
+  &:focus {
+    transition: background-color 0.5s;
+    background-color: $sedona-blue--hover;
+  }
+
+}
+
+.button--close {
+  width: 23px;
+
+
+  background-color: transparent;
+
+    &::after,
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 25px;
+      height: 5px;
+
+      background-color: white;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+}
+
+
+.button--menu {
+  width: 23px;
+  height: 21px;
+
+  transform: translateY(-50%);
+  background-image:
+    linear-gradient(
+      $sedona-blue 0%,
+      $sedona-blue 20%,
+      $sedona-white 20%,
+      $sedona-white 40%,
+      $sedona-blue 40%,
+      $sedona-blue 60%,
+      $sedona-white 60%,
+      $sedona-white 80%,
+      $sedona-blue 80%,
+      $sedona-blue 100%
+    );
+
+      &:hover,
+      &:focus {
+        background-image:
+          linear-gradient(
+            $sedona-blue--hover 0%,
+            $sedona-blue--hover 20%,
+            $sedona-white 20%,
+            $sedona-white 40%,
+            $sedona-blue--hover 40%,
+            $sedona-blue--hover 60%,
+            $sedona-white 60%,
+            $sedona-white 80%,
+            $sedona-blue--hover 80%,
+            $sedona-blue--hover 100%
+          );
+      }
+}

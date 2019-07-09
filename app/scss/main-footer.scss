@@ -1,0 +1,40 @@
+.main-footer {
+  @include text(14px, 26px, $sedona-text);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__tag {
+  margin: 25px 0 0 0;
+
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.main-footer__list {
+  margin: 35px 0 0 0;
+}
+
+.main-footer__author {
+  position: relative;
+  display: inline-block;
+  margin: 35px 35px 20px 0;
+
+  color: $sedona-text;
+  text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $sedona-blue;
+      fill: $sedona-blue
+    }
+
+}
+
+.main-footer__icon {
+  position: absolute;
+  top: -5px;
+  right: -35px;
+}

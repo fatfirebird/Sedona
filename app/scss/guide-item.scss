@@ -1,0 +1,54 @@
+.guide-item {
+  @include text(16px, 26px, $sedona-text);
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 40px 0 70px;
+}
+
+.guide-item__title {
+  position: relative;
+
+  margin: 20px 0 15px 0;
+
+  color: $sedona-title;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -5px;
+      left: -50px;
+
+      width: 40px;
+      height: 40px;
+
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+}
+
+.guide-item__title--house {
+  &::before {
+    background-image: url("../image/house-icon.svg");
+  }
+}
+
+.guide-item__title--food {
+  &::before {
+    background-image: url("../image/food-icon.svg");
+  }
+}
+
+.guide-item__title--souvenir {
+  &::before {
+    background-image: url("../image/souvenir-icon.svg");
+  }
+}
+
+.guide-item__text {
+  margin: 0;
+
+  font-size: 14px;
+}

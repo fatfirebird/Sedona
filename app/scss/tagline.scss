@@ -1,0 +1,18 @@
+.tagline {
+  @include text(11px, 26px, $sedona-text);
+
+  padding: 0 15px 0 15px;
+
+  text-align: center;
+}
+
+.tagline__title {
+  margin: 35px 0px 20px 0px;
+
+  font-size: 17px;
+  color: $sedona-title
+}
+
+.tagline__text {
+  font-size: 14px;
+}

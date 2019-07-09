@@ -1,0 +1,26 @@
+.hotel {
+  @include text(16px, 26px, $sedona-text);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+
+.hotel__title {
+  margin: 30px 0 20px 0;
+
+  color: $sedona-title;
+}
+
+.hotel__text {
+  margin: 0 0 25px 0;
+
+  font-size: 14px;
+}
+
+.hotel__input {
+  margin-bottom: 50px;
+}

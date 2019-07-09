@@ -1,0 +1,44 @@
+.advantage {
+  @include text(16px, 26px, $sedona-white);
+  position: relative;
+
+  padding: 30px 20px 30px 20px;
+
+  background-color: $sedona-blue;
+  text-align: center;
+}
+
+.advantage--grey {
+  color: $sedona-text;
+  background-color: $sedona-lightgrey;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 90%;
+    height: 1px;
+    background-color: $sedona-grey;
+
+    transform: translateX(-50%);
+  }
+
+  &:last-of-type {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.advantage__title {
+  margin: 0 0 10px 0;
+}
+
+.advantage__text {
+  margin: 10px 0 0 0;
+
+  font-size: 14px;
+}

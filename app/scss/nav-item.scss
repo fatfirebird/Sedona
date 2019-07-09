@@ -1,0 +1,53 @@
+.nav-item {
+  max-height: 60px;
+  box-sizing: border-box;
+  border-top: 1px solid $menu__border--top;
+  border-bottom: 1px solid $menu__border--bottom;
+
+  background-color: $sedona-blue;
+  text-align: center;
+
+  &:first-child {
+    position: relative;
+    border-top-color: $sedona-blue;
+  }
+
+  &:last-of-type {
+    box-shadow: 0px -2px 5px -2px #565353a1 inset;
+  }
+
+  &:not(.nav-list__item--logo):hover,
+  &:not(.nav-list__item--logo):focus {
+    background-color: $sedona-blue--hover;
+    border-top-color: $menu__border--bottom--hover
+  }
+
+}
+
+.nav-item--logo {
+  position: relative;
+
+  border: none;
+
+  background-color: transparent;
+}
+
+.nav-item__link {
+  @include text(18px, 40px, #fff);
+
+  display: block;
+  padding: 10px 0 10px 0;
+
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-item__logo {
+    z-index: 3;
+  }
+
+.nav-item__button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
