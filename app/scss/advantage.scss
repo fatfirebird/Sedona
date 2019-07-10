@@ -4,11 +4,17 @@
 
   padding: 30px 20px 30px 20px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
   background-color: $sedona-blue;
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 30px 40px 30px 40px;
+    padding: 0 40px 0 40px;
 
     &:not(.advantage--grey):nth-child(2n + 1) {
       grid-area: desc-1;
@@ -44,8 +50,9 @@
     }
   }
   @media (min-width: $tablet) {
-    max-height: 260px;
-    padding: 30px 50px 30px 50px;
+    height: 260px;
+
+    padding: 0 50px 0 50px;
 
     &::after {
       display: none;

@@ -1,3 +1,5 @@
 .main-header {
-  
+  @media (min-width: $desktop) {
+    box-shadow: 0px 0px 5px 2px $sedona-grey;
+  }
 }

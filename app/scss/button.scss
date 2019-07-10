@@ -12,6 +12,7 @@
 .button--hotel {
   @include text(21px, 26px, $sedona-white);
 
+  max-width: 460px;
   max-height: 60px;
 
   padding: 15px 30px 15px 30px;
@@ -22,7 +23,7 @@
     background-color: $sedona-blue--hover;
   }
   @media (min-width: $tablet) {
-    padding: 15px 15% 15px 15%;
+    width: 460px;
   }
 }
 

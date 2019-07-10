@@ -1,3 +1,6 @@
 .main-page {
-
+  @media (min-width: $desktop) {
+    background-color: $sedona-white;
+    box-shadow: 0px 0px 5px 2px $sedona-grey;
+  }
 }

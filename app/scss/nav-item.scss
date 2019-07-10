@@ -52,7 +52,11 @@
 
   border: none;
 
-  background-color: transparent;
+  z-index: 3;
+
+  @media (max-width: $tablet - 1) {
+    background-color: transparent;
+  }
 }
 
 .nav-item__link {
@@ -73,10 +77,6 @@
     }
   }
 }
-
-.nav-item__logo {
-    z-index: 3;
-  }
 
 .nav-item__button {
   position: absolute;
