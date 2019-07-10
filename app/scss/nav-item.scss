@@ -57,6 +57,27 @@
   @media (max-width: $tablet - 1) {
     background-color: transparent;
   }
+
+  @media (min-width: $desktop) {
+    &::before{
+      content: "";
+
+      position: absolute;
+      top: -70px;
+      left: 50%;
+
+      width: 140px;
+      height: 140px;
+
+      border-bottom-right-radius: 8%;
+
+      z-index: -1;
+      background-color: $sedona-blue;
+      transform:
+        translateX(-50%)
+        rotate(45deg);
+    }
+  }
 }
 
 .nav-item__link {

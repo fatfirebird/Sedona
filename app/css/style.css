@@ -85,6 +85,18 @@
   @media (max-width: 767px) {
     .nav-item--logo {
       background-color: transparent; } }
+  @media (min-width: 1200px) {
+    .nav-item--logo::before {
+      content: "";
+      position: absolute;
+      top: -70px;
+      left: 50%;
+      width: 140px;
+      height: 140px;
+      border-bottom-right-radius: 8%;
+      z-index: -1;
+      background-color: #81b3d2;
+      transform: translateX(-50%) rotate(45deg); } }
 
 .nav-item__link {
   font-size: 18px;
