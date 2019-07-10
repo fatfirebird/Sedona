@@ -1,9 +1,15 @@
 .advantages-list {
   @include list-reset();
 
+  display: grid;
+  grid-template: 1fr / 1fr;
+
   margin: 0;
+
+  @media (min-width: $tablet) {
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
 }
 
 .advantages-list__item {
-  display: block;
 }

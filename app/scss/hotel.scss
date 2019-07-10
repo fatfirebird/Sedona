@@ -4,9 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   text-align: center;
   padding: 0 15px 0 15px;
+
+
 }
 
 .hotel__title {
@@ -19,6 +22,10 @@
   margin: 0 0 25px 0;
 
   font-size: 14px;
+
+  @media (min-width: $tablet) {
+    padding: 0 10% 0 10%;
+  }
 }
 
 .hotel__input {

@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 35px 0 35px 0;
+  }
 }
 
 .main-footer__tag {
@@ -11,10 +18,18 @@
 
   font-weight: bold;
   font-size: 21px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
 .main-footer__list {
   margin: 35px 0 0 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
 .main-footer__author {
@@ -27,10 +42,16 @@
 
     &:hover,
     &:focus {
+      transition:
+        color 0.3s,
+        fill 0.3s;
       color: $sedona-blue;
       fill: $sedona-blue
     }
 
+  @media (min-width: $tablet) {
+    margin: 0 35px 0 0;
+  }
 }
 
 .main-footer__icon {

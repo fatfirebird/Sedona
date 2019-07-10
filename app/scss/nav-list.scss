@@ -5,6 +5,11 @@
   flex-direction: column;
 
   margin: 0;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .nav-list__item {
@@ -13,4 +18,8 @@
 
 .nav-list__item--logo {
   order: 2;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
 }

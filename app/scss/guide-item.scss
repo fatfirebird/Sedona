@@ -5,6 +5,16 @@
   flex-direction: column;
 
   padding: 0 40px 0 70px;
+
+
+
+  @media (min-width: $tablet) {
+    align-items: center;
+
+    padding: 0 40px 0 40px;
+
+    text-align: center;
+  }
 }
 
 .guide-item__title {
@@ -26,6 +36,16 @@
 
       background-repeat: no-repeat;
       background-position: 0 0;
+
+      @media (min-width: $tablet) {
+        top: -100px;
+        left: 50%;
+
+        width: 80px;
+        height: 80px;
+
+        transform: translateX(-50%);
+      }
     }
 }
 

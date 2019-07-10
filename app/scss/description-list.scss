@@ -1,7 +1,40 @@
 .descriptions-list {
+  position: relative;
+
   display: grid;
+
+  @media (max-width: $tablet - 1) {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      border-top: 50px solid $sedona-white;
+      border-right: 400px solid transparent;
+      border-left: 400px solid transparent;
+      border-bottom: 0px solid $sedona-white;
+
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+  }
+
+  @media (min-width: $tablet) {
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-areas:
+       "desc-1 img-1 img-1"
+       "guide guide guide"
+       "img-2 img-2 desc-2"
+       "adv adv adv";
+
+      margin: 40px 0 0 0;
+  }
 }
 
-.descriptions-list__item {
-  
+.descriptions-list__item:first-child {
+  @media (max-width: $tablet - 1) {
+    padding-top: 90px;
+  }
 }

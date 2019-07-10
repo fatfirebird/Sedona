@@ -1,9 +1,15 @@
 .tagline {
   @include text(11px, 26px, $sedona-text);
 
+  position: relative;
+
   padding: 0 15px 0 15px;
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 100px 0 100px;
+  }
 }
 
 .tagline__title {
