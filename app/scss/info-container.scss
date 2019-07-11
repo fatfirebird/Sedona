@@ -51,4 +51,10 @@
 
     margin: 10px 0 25px 35px;
   }
+
+  @media (min-width: $desktop) {
+    &::before {
+      background-image: url(../image/like--desktop.svg);      
+    }
+  }
 }
