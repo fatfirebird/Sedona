@@ -1,0 +1,44 @@
+.post-container {
+  @include text(14px, 26px, $sedona-title);
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    @include text(14px, 26px, $sedona-white);
+  }
+}
+
+.post-container__photo {
+  align-self: center;
+
+  width: 100%;
+  height: 280px;
+  margin: 20px 0 0 0;
+
+  object-fit: cover;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.post-container__photo--main {
+  @media (min-width: $desktop) {
+    height: 400px;
+  }
+}
+
+.post-container__info {
+  @media (min-width: $desktop) {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+    width: 100%;
+
+    background-color: $photo-info-bg;
+  }
+}

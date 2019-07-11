@@ -1,5 +1,5 @@
 .hotel {
-  @include text(16px, 26px, $sedona-text);
+  @include text(14px, 26px, $sedona-text);
 
   display: flex;
   flex-direction: column;
@@ -16,12 +16,16 @@
   margin: 50px 0 20px 0;
 
   color: $sedona-title;
+
+  font-size: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+  }
 }
 
 .hotel__text {
   margin: 0 0 25px 0;
-
-  font-size: 14px;
 
   @media (min-width: $tablet) {
     padding: 0 20% 0 20%;

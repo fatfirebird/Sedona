@@ -3,19 +3,27 @@
 
   background-image: url("../image/mountains.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 35%;
+  background-position: 50% 100%;
 
   text-align: center;
   z-index: 1;
+}
+
+.intro--main {
+  background-position: 50% 35%;
 }
 
 .intro__image {
   width: 90%;
   max-width: 400px;
   height: auto;
-  padding: 65px 5% 85px 5%;
+  padding: 0px 5% 0px 5%;
 
   z-index: 1;
+}
+
+.intro__image--main {
+  padding: 65px 5% 85px 5%;
 }
 
 .intro__border {
