@@ -35,9 +35,9 @@
     </header>
     <main class="main-page">
       <section class="intro">
-          <h2 class="intro__title visually-hidden">Sedona</h2>
-          <img class="intro__image" src="image/slogan.svg" alt="Welcom to the gorgerous Sedona because the Grand Canyon sucks!">
-          <div class="intro__border"></div>
+        <h2 class="intro__title visually-hidden">Sedona</h2>
+        <img class="intro__image" src="image/slogan.svg" alt="Welcom to the gorgerous Sedona because the Grand Canyon sucks!">
+        <div class="intro__border"></div>
       </section>
       <section class="tagline">
         <h2 class="tagline__title">Оставьте свой отзыв</h2>
@@ -48,43 +48,43 @@
         <form class="form" action="index.html" method="post">
           <div class="form__item form-item form-item--name">
             <h3 class="form-item__title">Представьтесь, пожалуйста:</h3>
-            <label for="name">Имя</label>
-            <input id="name" type="text" name="name" value="">
-            <label for="surname">Фамилия</label>
-            <input id="surname" type="text" name="name" value="">
-            <label for="lastname">Отчество</label>
-            <input id="lastname" type="text" name="lastname" value="">
+            <label class="form-item__label" for="name">Имя</label>
+            <input class="form-item__input" id="name" type="text" name="name" value="">
+            <label class="form-item__label" for="surname">Фамилия</label>
+            <input class="form-item__input" id="surname" type="text" name="name" value="">
+            <label class="form-item__label" for="lastname">Отчество</label>
+            <input class="form-item__input" id="lastname" type="text" name="lastname" value="">
           </div>
-          <div class="">
+          <div class="form__item form-item form-item--contact">
             <h3 class="form-item__title">Контактная информация:</h3>
-            <label for="phone">Контактный телефон</label>
-            <input id="phone" type="tel" name="phone" value="">
-            <label for="email">Электронная почта</label>
-            <input id="email" type="email" name="email" value="">
+            <label class="form-item__label" for="phone">Контактный телефон</label>
+            <input class="form-item__input" id="phone" type="tel" name="phone" value="">
+            <label class="form-item__label" for="email">Электронная почта</label>
+            <input class="form-item__input" id="email" type="email" name="email" value="">
           </div>
-          <div class="">
+          <div class="form__item form-item form-item--impression">
             <h3 class="form-item__title">Ваше общее впечатление:</h3>
-            <label for="impression--1">Скорее положительное</label>
-            <input id="impression--1" type="radio" name="impression" value="" checked>
-            <label for="impression--2">Скорее отрицательное</label>
-            <input id="impression--2" type="radio" name="impression" value="">
-            <label for="impression--3">Затрудняюсь ответить</label>
-            <input id="impression--3" type="radio" name="impression" value="">
+            <label class="form-item__label" for="impression--1">Скорее положительное</label>
+            <input class="form-item__input" id="impression--1" type="radio" name="impression" value="" checked>
+            <label class="form-item__label" for="impression--2">Скорее отрицательное</label>
+            <input class="form-item__input" id="impression--2" type="radio" name="impression" value="">
+            <label class="form-item__label" for="impression--3">Затрудняюсь ответить</label>
+            <input class="form-item__input" id="impression--3" type="radio" name="impression" value="">
           </div>
-          <div class="">
+          <div class="form__item form-item form-item--attraction">
             <h3 class="form-item__title">Посещенные достопримечательности:</h3>
-            <label for="Devil-Bridge">Мост Дьявола</label>
-            <input id="Devil-Bridge" type="checkbox" name="attraction" value="" checked>
-            <label for="Slide-park">Слайд-парк</label>
-            <input id="Slide-park" type="checkbox" name="attraction" value="">
-            <label for="Bell-rock">Гора-Колокол</label>
-            <input id="Bell-rock" type="checkbox" name="attraction" value="" checked>
-            <label for="Red-cliffs">Красные скалы</label>
-            <input id="Red-cliffs" type="checkbox" name="attraction" value="" checked>
+            <label class="form-item__label" for="Devil-Bridge">Мост Дьявола</label>
+            <input class="form-item__input" id="Devil-Bridge" type="checkbox" name="attraction" value="" checked>
+            <label class="form-item__label" for="Slide-park">Слайд-парк</label>
+            <input class="form-item__input" id="Slide-park" type="checkbox" name="attraction" value="">
+            <label class="form-item__label" for="Bell-rock">Гора-Колокол</label>
+            <input class="form-item__input" id="Bell-rock" type="checkbox" name="attraction" value="" checked>
+            <label class="form-item__label" for="Red-cliffs">Красные скалы</label>
+            <input class="form-item__input" id="Red-cliffs" type="checkbox" name="attraction" value="" checked>
           </div>
-          <div class="">
-            <p>Опишите свои эмоции:</p>
-            <textarea name="review" rows="8" cols="80"></textarea>
+          <div class="form__item form-item form-item--emotions">
+            <h3 class="form-item__title">Опишите свои эмоции:</h3>
+            <textarea class="form-item__input form-item__input--textarea" name="review" rows="8" cols="80"></textarea>
           </div>
           <button class="form__item button button--form" type="submit" name="button">Отправить</button>
         </form>

@@ -1,0 +1,44 @@
+.form-item {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top:0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $sedona-grey-line;
+  }
+}
+
+.form-item__title {
+  margin: 20px 0 0 0;
+}
+
+.form-item__label {
+
+}
+
+.form-item__input {
+  border: none;
+
+  background-color: $sedona-bg;
+
+  &:hover {
+    transition: background-color 0.2s;
+
+    background-color: $sedona-input--hover;
+  }
+
+  &:not([type="radio"]):not([type="checkbox"]):focus {
+    outline: 4px solid $sedona-input--hover;
+    background-color: $sedona-white;
+  }
+}
+
+.form__item--textarea {
+  
+}
