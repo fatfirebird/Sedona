@@ -114,6 +114,13 @@
         transition: color 0.3s;
         color: #81b3d2; } }
 
+@media (min-width: 768px) {
+  .nav-item__link--active {
+    color: #766357; }
+    .nav-item__link--active:hover, .nav-item__link--active:focus {
+      transition: color 0.3s;
+      color: #604e43; } }
+
 .nav-item__button {
   position: absolute;
   top: 50%;
@@ -525,7 +532,7 @@
       padding: 0 40px 0 40px; } }
   @media (min-width: 1200px) {
     .photo-section {
-      grid-template: 60% 1fr / 1fr 1fr 1fr;
+      grid-template: 400px 1fr / 1fr 1fr 1fr;
       grid-template-areas: "main-photo main-photo main-photo";
       padding: 0; } }
 
@@ -633,6 +640,9 @@
       bottom: 0px;
       right: 20px;
       margin: 10px 0 25px 35px; } }
+  @media (min-width: 1200px) {
+    .info-container__likes {
+      right: 30px; } }
   @media (min-width: 1200px) {
     .info-container__likes::before {
       background-image: url(../image/like--desktop.svg); } }

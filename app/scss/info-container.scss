@@ -53,8 +53,12 @@
   }
 
   @media (min-width: $desktop) {
+    right: 30px;
+  }
+
+  @media (min-width: $desktop) {
     &::before {
-      background-image: url(../image/like--desktop.svg);      
+      background-image: url(../image/like--desktop.svg);
     }
   }
 }

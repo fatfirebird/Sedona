@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template: 60% 1fr / 1fr 1fr 1fr;
+    grid-template: 400px 1fr / 1fr 1fr 1fr;
     grid-template-areas:
       "main-photo main-photo main-photo";
 

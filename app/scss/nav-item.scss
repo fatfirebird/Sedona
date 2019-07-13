@@ -99,6 +99,18 @@
   }
 }
 
+.nav-item__link--active {
+  @media (min-width: $tablet) {
+    color: $sedona__active-link;
+
+      &:hover,
+      &:focus {
+        transition: color 0.3s;
+        color: $sedona__active-link--hover;
+      }
+  }
+}
+
 .nav-item__button {
   position: absolute;
   top: 50%;
