@@ -74,37 +74,36 @@
           </div>
           <div class="form__item form-item form-item--impression">
             <h3 class="form-item__title">Ваше общее впечатление:</h3>
-            <p class="form-item__container input-container">
-              <label class="input-container__label" for="impression--1">Скорее положительное</label>
-              <input class="input-container__input" id="impression--1" type="radio" name="impression" value="" checked>
+            <p class="form-item__container input-container input-container--choice">
+              <input class="input-container__input input-container__input--choice input-container__input--radio" id="impression--1" type="radio" name="impression" value="" checked>
+              <label class="input-container__label input-container__label--choice input-container__label--radio" for="impression--1">Скорее положительное</label>
             </p>
-            <p class="form-item__container input-container">
-              <label class="input-container__label" for="impression--2">Скорее отрицательное</label>
-              <input class="input-container__input" id="impression--2" type="radio" name="impression" value="">
+            <p class="form-item__container input-container input-container--choice">
+              <input class="input-container__input input-container__input--choice input-container__input--radio" id="impression--2" type="radio" name="impression" value="">
+              <label class="input-container__label input-container__label--choice input-container__label--radio" for="impression--2">Скорее отрицательное</label>
             </p>
-            <p class="form-item__container input-container">
-              <label class="input-container__label" for="impression--3">Затрудняюсь ответить</label>
-              <input class="input-container__input" id="impression--3" type="radio" name="impression" value="">
+            <p class="form-item__container input-container input-container--choice">
+              <input class="input-container__input input-container__input--choice input-container__input--radio" id="impression--3" type="radio" name="impression" value="">
+              <label class="input-container__label input-container__label--choice input-container__label--radio" for="impression--3">Затрудняюсь ответить</label>
             </p>
           </div>
           <div class="form__item form-item form-item--attraction">
             <h3 class="form-item__title">Посещенные достопримечательности:</h3>
-            <p class="form-item__container input-container">
-              <label class="input-container__label" for="Devil-Bridge">Мост Дьявола</label>
-              <input class="input-container__input" id="Devil-Bridge" type="checkbox" name="attraction" value="" checked>
+            <p class="form-item__container input-container input-container--choice">
+              <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Devil-Bridge" type="checkbox" name="attraction" value="" checked>
+              <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Devil-Bridge">Мост Дьявола</label>
             </p>
-            <p class="form-item__container input-container">
-              <label class="input-container__label" for="Slide-park">Слайд-парк</label>
-              <input class="input-container__input" id="Slide-park" type="checkbox" name="attraction" value="">
-
+            <p class="form-item__container input-container input-container--choice">
+              <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Slide-park" type="checkbox" name="attraction" value="" checked>
+              <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Slide-park">Слайд-парк</label>
             </p>
-            <p class="form-item__container input-container">
-              <label class="input-container__label" for="Bell-rock">Гора-Колокол</label>
-              <input class="input-container__input" id="Bell-rock" type="checkbox" name="attraction" value="">
+            <p class="form-item__container input-container input-container--choice">
+              <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Bell-rock" type="checkbox" name="attraction" value="">
+              <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Bell-rock">Гора-Колокол</label>
             </p>
-            <p class="form-item__container input-container">
-              <label class="input-container__label" for="Red-cliffs">Красные скалы</label>
-              <input class="input-container__input" id="Red-cliffs" type="checkbox" name="attraction" value="">
+            <p class="form-item__container input-container input-container--choice">
+              <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Red-cliffs" type="checkbox" name="attraction" value="" checked>
+              <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Red-cliffs">Красные скалы</label>
             </p>
           </div>
           <div class="form__item form-item form-item--emotions">
@@ -113,7 +112,10 @@
               <textarea class="input-container__input input-container__input--textarea" id="review" name="review"></textarea>
             </p>
           </div>
-          <button class="form__item button button--hotel" type="submit" name="button">Отправить отзыв</button>
+          <p class="form-item__container input-container">
+            <button class="input-container__button button button--form" type="submit" name="button">Отправить отзыв</button>
+            <span class="input-container__help">* – Обязательные поля</span>
+          </p>
         </form>
       </section>
     </main>
