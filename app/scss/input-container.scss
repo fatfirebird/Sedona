@@ -1,0 +1,126 @@
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 20px;
+}
+
+.input-container--contact {
+  position: relative;
+
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 36px;
+    right: 0px;
+
+    width: 58px;
+    height: 58px;
+
+    background-color: $sedona-input--icon;
+  }
+}
+
+.input-container--phone,
+.input-container--mail {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 56px;
+    right: 18px;
+
+    width: 20px;
+    height: 20px;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+}
+
+.input-container--phone {
+  &::before {
+    background-image: url('../image/phone.svg');
+  }
+}
+
+.input-container--mail {
+  &::before {
+    background-image: url('../image/mail.svg');
+  }
+}
+
+.input-container__label {
+  @include text(14px, 26px, $sedona-text);
+
+  position: relative;
+
+  align-self: center;
+
+  margin: 0 15px 0 0;
+}
+
+.input-container__label--contact {
+  margin: 0 0 0 20px;
+}
+
+.input-container__input {
+  @include text(18px, 26px, $sedona-text);
+
+  display: block;
+
+  width: 100%;
+  max-height: 58px;
+  border: none;
+  padding: 16px 20px 16px 20px;
+
+  background-color: $sedona-bg;
+  font-weight: bold;
+
+  &:hover {
+    transition: background-color 0.2s;
+
+    background-color: $sedona-input--hover;
+  }
+
+  &:not([type="radio"]):not([type="checkbox"]):focus {
+    outline: 4px solid $sedona-input--hover;
+    background-color: $sedona-white;
+  }
+}
+
+.input-container__input--contact {
+  margin: 10px 0 0 0;
+  padding-right: 65px;
+}
+
+
+.input-container__input--textarea {
+  width: 100%;
+  max-height: 160px;
+  height: 160px;
+
+  resize: none;
+}
+
+
+// .input-container__label--mail,
+// .input-container__label--phone {
+//   position: relative;
+//
+//   &::after {
+    // content: "";
+    //
+    // position: absolute;
+    // top: 0;
+    // right: -250px;
+    //
+    // width: 58px;
+    // height: 58px;
+    //
+    // background-color: $sedona-input--icon;
+//   }
+// }

@@ -698,14 +698,85 @@
     background-color: #b2b2b2; }
 
 .form-item__title {
-  margin: 20px 0 0 0; }
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+  margin: 20px 0 0 0;
+  text-align: center; }
 
-.form-item__input {
+.form-item__title--contact {
+  margin-left: 20px; }
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 20px; }
+
+.input-container--contact {
+  position: relative;
+  flex-wrap: wrap; }
+  .input-container--contact::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6; }
+
+.input-container--phone::before,
+.input-container--mail::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  right: 18px;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  z-index: 2; }
+
+.input-container--phone::before {
+  background-image: url("../image/phone.svg"); }
+
+.input-container--mail::before {
+  background-image: url("../image/mail.svg"); }
+
+.input-container__label {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  position: relative;
+  align-self: center;
+  margin: 0 15px 0 0; }
+
+.input-container__label--contact {
+  margin: 0 0 0 20px; }
+
+.input-container__input {
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+  display: block;
+  width: 100%;
+  max-height: 58px;
   border: none;
-  background-color: #f2f2f2; }
-  .form-item__input:hover {
+  padding: 16px 20px 16px 20px;
+  background-color: #f2f2f2;
+  font-weight: bold; }
+  .input-container__input:hover {
     transition: background-color 0.2s;
     background-color: #e5e5e5; }
-  .form-item__input:not([type="radio"]):not([type="checkbox"]):focus {
+  .input-container__input:not([type="radio"]):not([type="checkbox"]):focus {
     outline: 4px solid #e5e5e5;
     background-color: #ffffff; }
+
+.input-container__input--contact {
+  margin: 10px 0 0 0;
+  padding-right: 65px; }
+
+.input-container__input--textarea {
+  width: 100%;
+  max-height: 160px;
+  height: 160px;
+  resize: none; }

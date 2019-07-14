@@ -15,30 +15,12 @@
 }
 
 .form-item__title {
+  @include text(18px, 26px, $sedona-text);
   margin: 20px 0 0 0;
+
+  text-align: center;
 }
 
-.form-item__label {
-
-}
-
-.form-item__input {
-  border: none;
-
-  background-color: $sedona-bg;
-
-  &:hover {
-    transition: background-color 0.2s;
-
-    background-color: $sedona-input--hover;
-  }
-
-  &:not([type="radio"]):not([type="checkbox"]):focus {
-    outline: 4px solid $sedona-input--hover;
-    background-color: $sedona-white;
-  }
-}
-
-.form__item--textarea {
-  
+.form-item__title--contact {
+  margin-left: 20px;
 }
