@@ -41,7 +41,7 @@
       </section>
       <section class="tagline">
         <h2 class="tagline__title">Оставьте свой отзыв</h2>
-        <p class="tagline__text">Помогите нашим отлеям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
+        <p class="tagline__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
       </section>
       <section class="form-container">
         <h2 class="visually-hidden">Форма отзыва</h2>
@@ -88,34 +88,36 @@
             </p>
           </div>
           <div class="form__item form-item form-item--attraction">
-            <h3 class="form-item__title">Посещенные достопримечательности:</h3>
-            <p class="form-item__container input-container input-container--choice">
+            <h3 class="form-item__title form-item__title--attraction">Посещенные достопримечательности:</h3>
+            <p class="form-item__container input-container input-container--attraction input-container--choice">
               <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Devil-Bridge" type="checkbox" name="attraction" value="" checked>
               <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Devil-Bridge">Мост Дьявола</label>
             </p>
-            <p class="form-item__container input-container input-container--choice">
+            <p class="form-item__container input-container input-container--attraction input-container--choice">
               <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Slide-park" type="checkbox" name="attraction" value="" checked>
               <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Slide-park">Слайд-парк</label>
             </p>
-            <p class="form-item__container input-container input-container--choice">
+            <p class="form-item__container input-container input-container--attraction input-container--choice">
               <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Bell-rock" type="checkbox" name="attraction" value="">
               <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Bell-rock">Гора-Колокол</label>
             </p>
-            <p class="form-item__container input-container input-container--choice">
+            <p class="form-item__container input-container input-container--attraction input-container--choice">
               <input class="input-container__input input-container__input--choice input-container__input--checkbox" id="Red-cliffs" type="checkbox" name="attraction" value="" checked>
               <label class="input-container__label input-container__label--choice input-container__label--checkbox" for="Red-cliffs">Красные скалы</label>
             </p>
           </div>
           <div class="form__item form-item form-item--emotions">
-            <h3 class="form-item__title">Опишите свои эмоции:</h3>
+            <h3 class="form-item__title form-item__title--emotions">Опишите свои эмоции:</h3>
             <p class="form-item__container input-container">
               <textarea class="input-container__input input-container__input--textarea" id="review" name="review"></textarea>
             </p>
           </div>
-          <p class="form-item__container input-container">
-            <button class="input-container__button button button--form" type="submit" name="button">Отправить отзыв</button>
-            <span class="input-container__help">* – Обязательные поля</span>
-          </p>
+          <div class="form__item form-item form-item--button">
+            <p class="form-item__container input-container input-container--button">
+              <button class="input-container__button button button--form" type="submit" name="button">Отправить отзыв</button>
+              <span class="input-container__help">* – Обязательные поля</span>
+            </p>
+          </div>
         </form>
       </section>
     </main>
