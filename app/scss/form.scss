@@ -1,4 +1,15 @@
 .form {
   display: grid;
   grid-template: 1fr / 1fr;
+
+  @media (min-width: $tablet) {
+    grid-template: 1fr / 50% 50%;
+
+    grid-template-areas:
+      "impression name"
+      "contact contact"
+      "attraction attraction"
+      "emotions emotions"
+      "button button";
+  }
 }

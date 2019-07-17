@@ -40,6 +40,14 @@
     transition: background-color 0.5s;
     background-color: $sedona-blue--hover;
   }
+
+  @media (min-width: $tablet) {
+    width: 325px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
+  }
 }
 
 .button--close {

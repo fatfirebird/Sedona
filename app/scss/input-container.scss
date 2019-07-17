@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 20px 20px 20px;
+
+  @media (min-width: $tablet) {
+    margin: 20px 40px 20px 40px;
+  }
 }
 
 .input-container--contact {
@@ -21,6 +25,15 @@
 
     background-color: $sedona-input--icon;
   }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &::before {
+      top: 10px;
+    }
+  }
 }
 
 .input-container--phone,
@@ -37,6 +50,12 @@
 
     background-position: 0 0;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      top: 30px;
+    }
   }
 }
 
@@ -68,6 +87,10 @@
 
 .input-container__label--contact {
   margin: 0 0 0 20px;
+
+  @media (min-width: $desktop) {
+    margin: 0 20px 0 0;
+  }
 }
 
 .input-container__label--choice {
@@ -98,12 +121,14 @@
 
     background-color: $sedona-input--hover;
   }
+}
 
-  &:not([type="radio"]):not([type="checkbox"]) {
-    width: 100%;
-  }
+.input-container__input--contact,
+.input-container__input--textarea,
+.input-container__input--name {
+  width: 100%;
 
-  &:not([type="radio"]):not([type="checkbox"]):focus {
+  &:focus {
     outline: 4px solid $sedona-input--hover;
     background-color: $sedona-white;
   }
@@ -112,6 +137,10 @@
 .input-container__input--contact {
   margin: 10px 0 0 0;
   padding-right: 65px;
+
+  // @media (min-width: $desktop) {
+  //   width: 50%;
+  // }
 }
 
 .input-container__input--choice {
@@ -223,7 +252,31 @@
 .input-container__help {
   @include text(14px, 26px, $sedona-text);
 
-  @media (max-width: $tablet - 1) {
-    display: none;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
   }
+}
+
+.input-container--attraction {
+
+  &:nth-child(2n) {
+    @media (max-width: $desktop - 1) {
+      margin-left: 150px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    margin: 20px 35px 20px 35px;
+  }
+}
+
+
+
+.input-container--button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
