@@ -103,13 +103,13 @@
 .form-item__title--contact {
   @media (min-width: $desktop) {
     grid-area: title;
+    align-self: center;
   }
 }
 
 .form-item__title--contact,
 .form-item__title--emotions,
 .form-item__title--attraction {
-  margin-left: 20px;
 
   @media (min-width: $tablet) {
     position: relative;
@@ -144,10 +144,15 @@
       transform: translateY(-50%);
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 20px;
+  }
 }
 
 .form-item__title--attraction {
   @media (min-width: $tablet){
     grid-area: title;
+    align-self: center;
   }
 }
