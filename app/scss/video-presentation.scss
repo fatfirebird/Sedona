@@ -31,17 +31,3 @@
     margin: 30px 20% 0 20%;
   }
 }
-
-.video-presentation__container {
-  width: 100%;
-  height: 200px;
-  margin: 25px 0 0 0;
-
-  background-color: $sedona-grey;
-
-  @media (min-width: $tablet) {
-    margin: 35px 0 0 0;
-
-    height: 300px;
-  }
-}

@@ -80,7 +80,16 @@
         <h2 class="video-presentation__title">Вы все еще сомневаетесь?</h2>
         <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video-presentation__container video-container">
-
+          <video class="video-container__video" poster="image/video-poster.jpg">
+            <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+          </video>
+          <div class="video-container__controls video-controls">
+            <button class="video-controls__play" type="button" name="button">Воспроизвести</button>
+            <input class="video-controls__seek-bar" type="range" value="0">
+            <button class="video-controls__mute" type="button" name="button">Заглушить</button>
+            <input class="video-controls__volume-bar" type="range" min="0" max="1" step="0.1" value="1">
+            <button class="video-controls__full-screen" type="button">Полный экран</button>
+          </div>
         </div>
       </section>
     </main>

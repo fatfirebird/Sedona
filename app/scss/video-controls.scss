@@ -1,0 +1,11 @@
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 280px;
+  height: 210px;
+
+  transform: translateX(-50%);
+  background-color: $sedona-grey;
+}
