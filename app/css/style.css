@@ -422,9 +422,6 @@
   @media (min-width: 768px) {
     .button--form {
       width: 325px; } }
-  @media (min-width: 1200px) {
-    .button--form {
-      width: 480px; } }
 
 .button--close {
   width: 23px;
@@ -774,6 +771,10 @@
   margin: 20px 0 0 0;
   text-align: center; }
 
+@media (min-width: 1200px) {
+  .form-item__title--contact {
+    grid-area: title; } }
+
 .form-item__title--contact,
 .form-item__title--emotions,
 .form-item__title--attraction {
@@ -807,15 +808,9 @@
         background-color: #b2b2b2;
         transform: translateY(-50%); } }
 
-@media (min-width: 1200px) {
-  .form-item__title--contact {
-    grid-area: title;
-    align-self: center; } }
-
 @media (min-width: 768px) {
   .form-item__title--attraction {
-    grid-area: title;
-    align-self: center; } }
+    grid-area: title; } }
 
 .input-container {
   display: flex;
