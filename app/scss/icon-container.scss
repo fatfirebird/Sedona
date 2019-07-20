@@ -1,0 +1,25 @@
+.icon-container {
+  position: relative;
+}
+
+.icon-container__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-container__item--mute-off {
+  display: none;
+}
+
+.icon-container__item--repeat {
+  display: none;
+}
+
+.icon-container__item--start {
+
+}
+
+.icon-container__item--pause {
+  display: none;
+}

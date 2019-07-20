@@ -118,3 +118,30 @@
       display: none;
     }
 }
+
+.button--controls {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  outline: none;
+
+  fill: $controls-color;
+  stroke: $controls-color;
+    &:hover{
+      fill: $sedona-text;
+      stroke: $sedona-text;
+    }
+
+  @media (min-width: $tablet) {
+    fill: $sedona-grey;
+    stroke: $sedona-grey;
+
+    &:hover {
+      fill: $sedona-white;
+      stroke: $sedona-white;
+    }
+  }
+}

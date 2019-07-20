@@ -80,15 +80,28 @@
         <h2 class="video-presentation__title">Вы все еще сомневаетесь?</h2>
         <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video-presentation__container video-container">
-          <video class="video-container__video" poster="image/video-poster.jpg">
+          <!-- poster="image/video-poster.jpg" -->
+          <video class="video-container__video">
             <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
           </video>
           <div class="video-container__controls video-controls">
-            <button class="video-controls__play" type="button" name="button">Воспроизвести</button>
+            <button class="video-controls__play button button--controls icon-container" type="button">
+              <svg class="icon-container__item icon-container__item--pause" width="20px" height="20px"><line stroke-width="10px" x1="0" y1="0" x2="0" y2="20"/><line stroke-width="10px" x1="20" y1="0" x2="20" y2="20"/></svg>
+              <svg class="icon-container__item icon-container__item--start" width="20px" height="20px"><polygon points="5,0 5,20 20,10"></polygon></svg>
+              <svg class="icon-container__item icon-container__item--repeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.26 23.9"><path class="repeat" d="M9.94,5.63v-4l-5,5,5,5v-4a6,6,0,1,1-6,6h-2a8,8,0,1,0,8-8Z"/></svg>
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
             <input class="video-controls__seek-bar" type="range" value="0">
-            <button class="video-controls__mute" type="button" name="button">Заглушить</button>
+            <button class="video-controls__mute button button--controls icon-container" type="button">
+              <svg class="icon-container__item icon-container__item--mute-on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 27.72"><g id="c74_volume" data-name="c74 volume"><path d="M4.64,8.73H0V19.06H4.64l8.76,6.5S15,26.9,15,25.51V2.07C15,1,13.6,2,13.6,2Z"/><path d="M20,6.71a1.18,1.18,0,1,0-1.67,1.67,7.76,7.76,0,0,1,0,11,1.2,1.2,0,0,0,0,1.68A1.2,1.2,0,0,0,20,21,10.14,10.14,0,0,0,20,6.71Z"/><path d="M23.21,3a1.2,1.2,0,0,0-1.68,0,1.18,1.18,0,0,0,0,1.67,13.06,13.06,0,0,1,0,18.46,1.18,1.18,0,0,0,0,1.67,1.18,1.18,0,0,0,1.68,0,15.43,15.43,0,0,0,0-21.8Z"/></g></svg>
+              <svg class="icon-container__item icon-container__item--mute-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.53 508.53"><path class="cls-1" d="M263.54.12C257.76-.42,251,1,243,5.81c0,0-132.53,115.62-138.32,121.31H31.78A31.84,31.84,0,0,0,0,158.93V353.66a31.76,31.76,0,0,0,31.78,31.79h72.94C110.51,391.2,243,502.72,243,502.72c8,4.8,14.75,6.23,20.53,5.69,11.76-1.11,20-11,22.54-21.36.09-1,.09-464.53-.07-465.55C283.56,11.08,275.27,1.23,263.54.12Z"/><path class="cls-1" d="M448,254.28l54.86-54.86A19.39,19.39,0,1,0,475.4,172l-54.85,54.88L365.66,172a19.38,19.38,0,0,0-27.4,27.42l54.86,54.86-54.86,54.89a19.37,19.37,0,0,0,27.4,27.39l54.88-54.85,54.86,54.85a19.38,19.38,0,1,0,27.43-27.39Z"/></svg>
+              <span class="visually-hidden">Звук</span>
+            </button>
             <input class="video-controls__volume-bar" type="range" min="0" max="1" step="0.1" value="1">
-            <button class="video-controls__full-screen" type="button">Полный экран</button>
+            <button class="video-controls__full-screen button button--controls" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><polygon points="0 0 0 3 0 6 3 6 3 3 6 3 6 0 3 0 0 0"/><polygon points="3 14 0 14 0 17 0 20 3 20 6 20 6 17 3 17 3 14"/><polygon points="17 0 14 0 14 3 17 3 17 6 20 6 20 3 20 0 17 0"/><polygon points="17 17 14 17 14 20 17 20 20 20 20 17 20 14 17 14 17 17"/></svg>
+              <span class="visually-hidden">Полный экран</span>
+            </button>
           </div>
         </div>
       </section>
