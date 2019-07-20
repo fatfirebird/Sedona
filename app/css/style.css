@@ -707,6 +707,9 @@
     .video-presentation__text {
       margin: 30px 20% 0 20%; } }
 
+.video-presentation__container {
+  margin-top: 20px; }
+
 .form {
   display: grid;
   grid-template: 1fr / 1fr; }
@@ -1120,17 +1123,20 @@
   .video-controls__volume-bar::-webkit-slider-runnable-track {
     width: 100%;
     height: 3px;
-    background: rgba(120, 120, 120, 0.3); }
+    background: rgba(120, 120, 120, 0.3);
+    cursor: pointer; }
   .video-controls__seek-bar::-moz-range-track,
   .video-controls__volume-bar::-moz-range-track {
     width: 100%;
     height: 3px;
-    background: rgba(120, 120, 120, 0.3); }
+    background: rgba(120, 120, 120, 0.3);
+    cursor: pointer; }
   .video-controls__seek-bar::-ms-track,
   .video-controls__volume-bar::-ms-track {
     width: 100%;
     height: 3px;
     background: rgba(120, 120, 120, 0.3);
+    cursor: pointer;
     background: transparent; }
   .video-controls__seek-bar::-ms-fill-lower,
   .video-controls__volume-bar::-ms-fill-lower {
@@ -1164,12 +1170,3 @@
   position: absolute;
   top: 0;
   left: 0; }
-
-.icon-container__item--mute-off {
-  display: none; }
-
-.icon-container__item--repeat {
-  display: none; }
-
-.icon-container__item--pause {
-  display: none; }

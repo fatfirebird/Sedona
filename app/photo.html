@@ -86,15 +86,15 @@
           </video>
           <div class="video-container__controls video-controls">
             <button class="video-controls__play button button--controls icon-container" type="button">
-              <svg class="icon-container__item icon-container__item--pause" width="20px" height="20px"><line stroke-width="10px" x1="0" y1="0" x2="0" y2="20"/><line stroke-width="10px" x1="20" y1="0" x2="20" y2="20"/></svg>
+              <svg class="icon-container__item icon-container__item--pause visually-hidden" width="20px" height="20px"><line stroke-width="10px" x1="0" y1="0" x2="0" y2="20"/><line stroke-width="10px" x1="20" y1="0" x2="20" y2="20"/></svg>
               <svg class="icon-container__item icon-container__item--start" width="20px" height="20px"><polygon points="5,0 5,20 20,10"></polygon></svg>
-              <svg class="icon-container__item icon-container__item--repeat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.26 23.9"><path class="repeat" d="M9.94,5.63v-4l-5,5,5,5v-4a6,6,0,1,1-6,6h-2a8,8,0,1,0,8-8Z"/></svg>
+              <svg class="icon-container__item icon-container__item--repeat visually-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.26 23.9"><path class="repeat" d="M9.94,5.63v-4l-5,5,5,5v-4a6,6,0,1,1-6,6h-2a8,8,0,1,0,8-8Z"/></svg>
               <span class="visually-hidden">Воспроизвести</span>
             </button>
             <input class="video-controls__seek-bar" type="range" value="0">
             <button class="video-controls__mute button button--controls icon-container" type="button">
               <svg class="icon-container__item icon-container__item--mute-on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 27.72"><g id="c74_volume" data-name="c74 volume"><path d="M4.64,8.73H0V19.06H4.64l8.76,6.5S15,26.9,15,25.51V2.07C15,1,13.6,2,13.6,2Z"/><path d="M20,6.71a1.18,1.18,0,1,0-1.67,1.67,7.76,7.76,0,0,1,0,11,1.2,1.2,0,0,0,0,1.68A1.2,1.2,0,0,0,20,21,10.14,10.14,0,0,0,20,6.71Z"/><path d="M23.21,3a1.2,1.2,0,0,0-1.68,0,1.18,1.18,0,0,0,0,1.67,13.06,13.06,0,0,1,0,18.46,1.18,1.18,0,0,0,0,1.67,1.18,1.18,0,0,0,1.68,0,15.43,15.43,0,0,0,0-21.8Z"/></g></svg>
-              <svg class="icon-container__item icon-container__item--mute-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.53 508.53"><path class="cls-1" d="M263.54.12C257.76-.42,251,1,243,5.81c0,0-132.53,115.62-138.32,121.31H31.78A31.84,31.84,0,0,0,0,158.93V353.66a31.76,31.76,0,0,0,31.78,31.79h72.94C110.51,391.2,243,502.72,243,502.72c8,4.8,14.75,6.23,20.53,5.69,11.76-1.11,20-11,22.54-21.36.09-1,.09-464.53-.07-465.55C283.56,11.08,275.27,1.23,263.54.12Z"/><path class="cls-1" d="M448,254.28l54.86-54.86A19.39,19.39,0,1,0,475.4,172l-54.85,54.88L365.66,172a19.38,19.38,0,0,0-27.4,27.42l54.86,54.86-54.86,54.89a19.37,19.37,0,0,0,27.4,27.39l54.88-54.85,54.86,54.85a19.38,19.38,0,1,0,27.43-27.39Z"/></svg>
+              <svg class="icon-container__item icon-container__item--mute-off visually-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.53 508.53"><path class="cls-1" d="M263.54.12C257.76-.42,251,1,243,5.81c0,0-132.53,115.62-138.32,121.31H31.78A31.84,31.84,0,0,0,0,158.93V353.66a31.76,31.76,0,0,0,31.78,31.79h72.94C110.51,391.2,243,502.72,243,502.72c8,4.8,14.75,6.23,20.53,5.69,11.76-1.11,20-11,22.54-21.36.09-1,.09-464.53-.07-465.55C283.56,11.08,275.27,1.23,263.54.12Z"/><path class="cls-1" d="M448,254.28l54.86-54.86A19.39,19.39,0,1,0,475.4,172l-54.85,54.88L365.66,172a19.38,19.38,0,0,0-27.4,27.42l54.86,54.86-54.86,54.89a19.37,19.37,0,0,0,27.4,27.39l54.88-54.85,54.86,54.85a19.38,19.38,0,1,0,27.43-27.39Z"/></svg>
               <span class="visually-hidden">Звук</span>
             </button>
             <input class="video-controls__volume-bar" type="range" min="0" max="1" step="0.1" value="1">
@@ -132,5 +132,6 @@
           <svg class="main-footer__icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="30px" height="35px" viewBox="0 0 528.02 668.47"><defs><style>.cls-1{stroke:#231f20;stroke-miterlimit:10;}</style></defs><title>Artboard 1</title><path class="cls-1" d="M266.86.29,264.08,0,.16,27.67V511.43l263.93,157L528,511.43V27.67ZM493.5,491.8,264.09,628.3,34.68,491.8V293.52l228.42,136,.39,24.63L106.78,360.85l-.23,23.92,157.33,94.56.39,25.29L107,411.06,106.77,435l157.32,94.55,158.83-95v-24l-.2.11V332.44l70.78-42.26Zm-.19-227.34-62.76,37-29,17.07L263.41,236.31l-.23,23.92,118.1,70.23-1,.62-2.54,1.5-16.78,9.88-97.5-58-.23,23.92,77,45.76L322,366.29l-.44.26-58.13-34.24-.23,23.92,38.15,22.46L262.47,402,35.18,266.91,262.79,130.1v0Zm.19-24.06-230.65-136v0h-.06v0L34.68,240.24V58.77L264.09,34.71,493.5,58.77Z"/></svg>
         </a>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
