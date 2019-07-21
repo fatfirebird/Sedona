@@ -64,13 +64,13 @@
             <h3 class="form-item__title form-item__title--contact">Контактная информация:</h3>
             <p class="form-item__container input-container input-container--contact input-container--phone">
               <label class="input-container__label input-container__label--contact" for="phone">Контактный телефон:</label>
-              <input class="input-container__input input-container__input--contact" id="phone" type="tel" name="phone" value="">
-              <span class="input-container__error">Ошибка, перепроверьте номер</span>
+              <input class="input-container__input input-container__input--contact" id="phone" type="tel" placeholder="+7(000)000-00-00" name="phone" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+              <span class="input-container__error input-container__error--phone">Ошибка, перепроверьте номер</span>
             </p>
             <p class="form-item__container input-container input-container--contact input-container--mail">
               <label class="input-container__label input-container__label--contact" for="email">Электронная почта:</label>
-              <input class="input-container__input input-container__input--contact" id="email" type="email" name="email" value="">
-              <span class="input-container__error">Ошибка, перепроверьте почту</span>
+              <input class="input-container__input input-container__input--contact" id="email" type="email" placeholder="example@example.ru" name="email" required>
+              <span class="input-container__error input-container__error--mail">Ошибка, перепроверьте email</span>
             </p>
           </div>
           <div class="form__item form-item form-item--impression">

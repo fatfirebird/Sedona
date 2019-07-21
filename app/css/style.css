@@ -1018,7 +1018,8 @@
   height: 30px;
   bottom: -40px;
   left: 20px;
-  text-transform: none; }
+  text-transform: none;
+  display: none; }
   @media (min-width: 768px) {
     .input-container__error {
       top: 0;
@@ -1027,6 +1028,12 @@
     .input-container__error {
       top: -20px;
       left: 140px; } }
+
+.input-container__input--contact[type="tel"]:invalid + .input-container__error--phone {
+  display: block; }
+
+.input-container__input--contact[type="email"]:invalid + .input-container__error--mail {
+  display: block; }
 
 .input-container__help {
   font-size: 14px;

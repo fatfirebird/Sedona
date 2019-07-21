@@ -67,9 +67,7 @@ video.addEventListener('timeupdate', function() {
   seekBar.value = value;
 });
 
-video.addEventListener('click', function() {
-  videoPlaying();
-});
+video.addEventListener('click', videoPlaying);
 
 video.addEventListener('dblclick', function() {
   if (!video.fullscreenEnabled) {
