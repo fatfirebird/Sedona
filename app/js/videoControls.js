@@ -1,4 +1,5 @@
 let video              = document.querySelector('.video-container__video');
+let controls           = document.querySelector('.video-controls');
 
 let playButton         = document.querySelector('.video-controls__play');
 let start              = document.querySelector('.icon-container__item--start');
@@ -12,6 +13,9 @@ let fullscreenButton   = document.querySelector('.video-controls__full-screen');
 let seekBar            = document.querySelector('.video-controls__seek-bar');
 let volumeBar          = document.querySelector('.video-controls__volume-bar');
 let volumeValue        = [1, 1];
+
+video.controls = false;
+controls.classList.remove('visually-hidden');
 
 playButton.addEventListener('click', function(evt) {
   evt.preventDefault();
