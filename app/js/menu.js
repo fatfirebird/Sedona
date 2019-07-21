@@ -20,4 +20,10 @@ function showMenu() {
   logo.style.display = 'block';
 };
 
-showMenu();
+function getWindowWidth() {
+  return window.innerWidth || document.body.clientWidth;
+}
+
+if (getWindowWidth() < 768) {
+  showMenu();
+}
