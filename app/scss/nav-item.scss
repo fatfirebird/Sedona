@@ -1,6 +1,6 @@
 .nav-item {
+  display: none;
   max-height: 60px;
-
   box-sizing: border-box;
   border-top: 1px solid $menu__border--top;
   border-bottom: 1px solid $menu__border--bottom;
@@ -50,6 +50,7 @@
 .nav-item--logo {
   position: relative;
 
+  display: block;
   border: none;
 
   z-index: 3;
@@ -83,6 +84,8 @@
 .nav-item__link {
   @include text(18px, 40px, $sedona-white);
 
+  display: block;
+  width: 100%;
   padding: 10px 0 10px 0;
 
   font-weight: bold;

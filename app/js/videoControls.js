@@ -11,8 +11,7 @@ let fullscreenButton   = document.querySelector('.video-controls__full-screen');
 
 let seekBar            = document.querySelector('.video-controls__seek-bar');
 let volumeBar          = document.querySelector('.video-controls__volume-bar');
-
-let volumeValue = [1, 1];
+let volumeValue        = [1, 1];
 
 playButton.addEventListener('click', function(evt) {
   evt.preventDefault();

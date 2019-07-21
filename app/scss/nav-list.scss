@@ -14,11 +14,11 @@
 
 .nav-list__item {
   order: 1;
+
 }
 
 .nav-list__item--logo {
   order: 2;
-
   @media (min-width: $tablet) {
     order: 1;
   }
