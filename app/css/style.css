@@ -1001,7 +1001,9 @@
     transform: rotate(45deg); }
 
 .input-container__input--radio:hover + .input-container__label--radio::before,
-.input-container__input--checkbox:hover + .input-container__label--checkbox::before {
+.input-container__input--checkbox:hover + .input-container__label--checkbox::before,
+.input-container__input--radio:focus + .input-container__label--radio::before,
+.input-container__input--checkbox:focus + .input-container__label--checkbox::before {
   transition: background-color 0.2s;
   background-color: #e5e5e5; }
 
