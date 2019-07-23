@@ -9,7 +9,14 @@
   "author": "Pavel Konovalov",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "immutable": "^4.0.0-rc.12"
   },
   "dependencies": {
     "gulp-scss": "^1.4.0"

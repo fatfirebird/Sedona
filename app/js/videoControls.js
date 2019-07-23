@@ -1,18 +1,18 @@
-let video              = document.querySelector('.video-container__video');
-let controls           = document.querySelector('.video-controls');
+var video              = document.querySelector('.video-container__video');
+var controls           = document.querySelector('.video-controls');
 
-let playButton         = document.querySelector('.video-controls__play');
-let start              = document.querySelector('.icon-container__item--start');
-let pause              = document.querySelector('.icon-container__item--pause');
-let repeat             = document.querySelector('.icon-container__item--repeat');
-let volumeButton       = document.querySelector('.video-controls__mute');
-let unmuted            = document.querySelector('.icon-container__item--mute-on');
-let muted              = document.querySelector('.icon-container__item--mute-off');
-let fullscreenButton   = document.querySelector('.video-controls__full-screen');
+var playButton         = document.querySelector('.video-controls__play');
+var start              = document.querySelector('.icon-container__item--start');
+var pause              = document.querySelector('.icon-container__item--pause');
+var repeat             = document.querySelector('.icon-container__item--repeat');
+var volumeButton       = document.querySelector('.video-controls__mute');
+var unmuted            = document.querySelector('.icon-container__item--mute-on');
+var muted              = document.querySelector('.icon-container__item--mute-off');
+var fullscreenButton   = document.querySelector('.video-controls__full-screen');
 
-let seekBar            = document.querySelector('.video-controls__seek-bar');
-let volumeBar          = document.querySelector('.video-controls__volume-bar');
-let volumeValue        = [1, 1];
+var seekBar            = document.querySelector('.video-controls__seek-bar');
+var volumeBar          = document.querySelector('.video-controls__volume-bar');
+var volumeValue        = [1, 1];
 
 video.controls = false;
 controls.classList.remove('visually-hidden');
@@ -57,7 +57,7 @@ fullscreenButton.addEventListener('click', function(evt) {
 });
 
 seekBar.addEventListener('change', function() {
-  let time = video.duration * (seekBar.value / 100);
+  var time = video.duration * (seekBar.value / 100);
   video.currentTime = time;
   if (!repeat.classList.contains('visually-hidden')) {
     repeat.classList.add('visually-hidden');
@@ -66,7 +66,7 @@ seekBar.addEventListener('change', function() {
 });
 
 video.addEventListener('timeupdate', function() {
-  let value = (100 / video.duration) * video.currentTime;
+  var value = (100 / video.duration) * video.currentTime;
   seekBar.value = value;
 });
 
